@@ -1,0 +1,81 @@
+body
+{
+    background-color:white;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* naviagtion section*/
+#navbar
+{
+    
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 11px;
+    width: 100%;
+}
+
+#navbar ul li a
+{
+    font-size: 10px;
+    padding: 0px 10px;
+}
+
+/*logo and image */
+#logo
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* home section */
+#home
+{
+    padding: 3px 74px;
+    padding-left: 100px;
+    height: 440px;
+    justify-content: flex-end;
+}
+
+#home::before
+{
+    width: 100%;
+    height:53%;
+}
+#home p
+{
+    font-size: medium;
+}
+/* services */
+#services
+{
+    margin: 8px;
+    flex-direction: column;
+}
+
+/* clients*/
+#clients
+{
+    flex-wrap: wrap;
+}
+
+#clients img
+{
+    padding:20px;
+    height: 150px;
+}
+
+#client-section::before
+{
+    height:101%;
+}
+
+/*utility*/
+.h-primary
+{
+    font-size:larger;
+}
