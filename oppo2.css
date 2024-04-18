@@ -1,0 +1,99 @@
+nav
+{
+    flex-direction:column;
+}
+
+#logo img
+{
+    width: 65px;
+    height: 65px;
+    padding: 5px 10px;  
+}
+
+#navbar nav h1
+{
+    font-size:1rem;
+    padding-left: 20px;
+}
+
+#navbar nav h1:hover
+{
+    font-size:1.2rem;
+}
+
+
+#navbar ul
+{
+   justify-content: space-evenly;
+}
+
+#navbar ul li
+{
+    margin: 10px;
+}
+
+#navbar ul li a
+{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+main{
+    box-shadow: 2px 2px 2px 5px black;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+
+.item
+{
+   flex-direction: column-reverse;
+}
+
+.Ingredients
+{
+  padding-left: 20px;  
+}
+
+
+.Ingredients ul+h1
+{
+    margin:2px;
+   font-size:1rem;
+}
+
+.sweet img
+{
+    order: 2;
+    padding:5px;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+main
+{
+    margin-top: 20px;
+}
+.heading1
+{
+    text-align: center;
+    position: relative;
+    right: 10px;
+}
+
+
+footer
+{
+    margin-top: 15px;
+    position: relative;
+}
+#copyright
+{
+    font-size: 1rem;
+}
+
+#copyright p
+{
+    padding:5px;
+}

@@ -1,0 +1,342 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo img {
+    margin: 15px;
+    padding-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#navbar ul {
+
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 25px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 1s linear;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Home*/
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 77px 200px;
+    height: 550px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 94%;
+    background: url('back2.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    transition: all 2s linear;
+    color: white;
+}
+
+#home h1::first-letter {
+    font-size: 5.5rem;
+    transition: all 2s linear;
+}
+
+#home h1:hover::first-letter {
+    font-size: 7.5rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+/*order now*/
+.btn {
+    
+    margin-top: 30px;
+    background-color: rgb(239, 231, 231);
+    padding: 15px 35px;
+    border: 4px solid black;
+    border-radius: 15px;
+    position: relative;
+    transition: all 1s linear;
+}
+
+.btn:hover {
+    font-size: 2rem;
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+button::before {
+    content: "";
+    background-color: rgb(17, 198, 244);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 11px;
+    opacity: 0;
+    animation: wave 1s linear 0s infinite normal backwards;
+    transition: all 2s linear;
+}
+
+button:hover::before {
+    background-color: whitesmoke;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.5, 1.5);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+
+}
+
+/* services */
+#services {
+    display: flex;
+}
+
+.service {
+    margin: 30px;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.service img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    transition: all 1s linear;
+}
+
+.service img:hover
+{
+    width: 200px;
+    height:200px;
+}
+
+.service img:hover+h1
+{
+    font-size:3rem;
+}
+
+#services-container
+{
+    background-image: linear-gradient(to right, red,yellow,green);
+
+}
+
+#services-container:hover
+{
+   
+    background-image: linear-gradient(to right, yellow ,green  ,red );
+}
+#services-container>h1:hover
+{
+    font-size: 5.8rem;
+}
+
+
+.service h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service p {
+    text-align: center;
+    padding: 10px;
+}
+
+/*client side*/
+#client {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#client-section::before {
+    content: "";
+    background: url('back.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#client-section h1 {
+    margin-top: 40px;
+}
+
+figure figcaption
+{
+    visibility: hidden;
+    transition: all 0s linear;
+}
+
+figure:hover figcaption
+{
+    font-size: 1.5rem;
+    text-align: center;
+    visibility: visible;
+    color: black;
+    font-weight: bold;
+}
+
+
+.client-item img {
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    transition: all 1s linear;
+    margin-bottom: 0px;
+}
+
+.client-item img:hover
+{
+    transform: rotate(360deg);
+    margin: 20px;
+    margin-bottom: 0px;
+    width:200px;
+    height: 200px;
+
+}
+
+figure
+{
+    margin-bottom:20px;
+}
+
+/*contact box*/
+
+#contact {
+    margin-top: 40px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('contact.png') no-repeat center center/cover;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.form-group label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.form-group label input,.form-group label textarea
+{
+    background-color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    padding: 5px 15px;
+    transition: all 1s linear;
+    
+}
+
+.form-group label input:focus,.form-group label textarea:focus
+{
+    background-color: skyblue;
+}
+
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+/*utility class*/
+.h-primary {
+    text-align: center;
+    font-size: 3.8rem;
+    transition: all 1s linear;
+}
